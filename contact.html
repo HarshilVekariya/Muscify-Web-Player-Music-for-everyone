@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            width: 35%;
+            margin: 50px auto;
+            background: #5f63605d;
+            padding: 10px;
+            height: 450px;
+            border-radius: 5px;
+            line-height: 35px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #254e01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #308300;
+        }
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        .logo a {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0%;
+            text-decoration: none;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo h3 {
+            padding-left: 14px;
+            cursor: context-menu;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="./assets/logo.png" alt="" height="40px" width="40px">
+            <h3>Muscify</h3>
+        </a></div>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <div><button type="submit"><a href="index.html">Send Message</a></button></div>
+        </form>
+    </div>
+</body>
+
+</html>
